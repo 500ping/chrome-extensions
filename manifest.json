@@ -1,0 +1,20 @@
+{
+    "name": "500PING Extension",
+    "version": "1.0.0",
+    "description": "...",
+    "manifest_version": 2,
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    },
+    "permissions": [
+        "bookmarks"
+    ],
+    "browser_action": {
+        "default_title": "Bla bla...",
+        "default_popup": "index.html"
+    },
+    "content_security_policy": "script-src 'self'; object-src 'self';"
+} 
