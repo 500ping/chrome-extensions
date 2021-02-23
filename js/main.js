@@ -24,3 +24,7 @@ $("#taskName").on('input',function() {
 $("#taskDesc").on('input',function() {
     get_branch_name();
 });
+
+$(".nav-tabs a").click(function(){
+    $(this).tab('show');
+});
