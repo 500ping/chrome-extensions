@@ -2,6 +2,8 @@
 //     $("#taskName").val("Dolly Duck");
 // });
 
+// $("#taskName").val("Dolly Duck");
+
 function get_branch_name() {
     task_name = $("#taskName").val().trim();
     task_desc = $("#taskDesc").val().trim();
@@ -9,8 +11,12 @@ function get_branch_name() {
     task_name = task_name.toLowerCase();
     task_desc = task_desc.toLowerCase();
 
-    temp = task_desc.split(' ');
-    task_desc = temp.join('_')
+    task_desc = task_desc.replace('[','');
+    task_desc = task_desc.replace(']','');
+    task_desc = task_desc.replace(' - ',' ');
+
+    task_desc = task_desc.split(' ');
+    task_desc = task_desc.join('_')
 
     branch_name =  task_name + '_' + task_desc
 

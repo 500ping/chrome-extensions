@@ -9,6 +9,12 @@
         ],
         "persistent": false
     },
+    "content_scripts": [
+        {
+            "matches": ["https://*.redmine.bnksolution.com/issues/*"],
+            "js": ["content.js"]
+        }
+    ],
     "permissions": [
         "bookmarks"
     ],
